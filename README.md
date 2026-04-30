@@ -3,7 +3,7 @@
 
 Pequeño scraper de ejemplo que muestra la IP pública, el país y extrae el título de una página usando `bs4`.
 
-<img width="867" height="484" alt="image" src="https://github.com/user-attachments/assets/9132c94b-6c1b-49dc-9ae2-7289ce9f47c2" />
+<img width="590" height="478" alt="image" src="https://github.com/user-attachments/assets/ec84d730-8edd-4583-94a9-c3c5119be482" />
 
 
 ## Instalación
