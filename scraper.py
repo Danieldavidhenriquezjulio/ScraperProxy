@@ -62,6 +62,7 @@ def print_result(ip, country, title):
     team.add_row("- Daniel David Henriquez")
     team.add_row("- Víctor Marrugo Aguilar" )
     team.add_row("- Gabriel Buelvas Morales")
+    team.add_row("- Isaias Gamarra Dardona")
 
     data = Table.grid(padding=(0, 2))
     data.add_column(style="bold cyan", justify="right")
