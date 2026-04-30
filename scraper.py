@@ -54,6 +54,15 @@ def print_result(ip, country, title):
     meta.add_row("Modo:", PROXY and "Tor (socks5)" or "Directo")
     meta.add_row("Timestamp:", datetime.now(timezone.utc).isoformat())
 
+    # tabla de integrantes (equipo)
+    team = Table(show_header=False, box=box.MINIMAL)
+    team.add_column(style="bold yellow")
+    team.add_column()
+    team.add_row("Integrantes", "")
+    team.add_row("- Daniel David Henriquez")
+    team.add_row("- Víctor Marrugo Aguilar" )
+    team.add_row("- Gabriel Buelvas Morales")
+
     data = Table.grid(padding=(0, 2))
     data.add_column(style="bold cyan", justify="right")
     data.add_column(style="")
@@ -62,13 +71,14 @@ def print_result(ip, country, title):
     data.add_row("Título", f"[magenta]{title or 'N/D'}")
 
     inner = Table.grid()
+    inner.add_row(Panel(team, title="Equipo", box=box.ROUNDED, padding=(0,1)))
     inner.add_row(Panel(meta, box=box.SQUARE, padding=(0,1)))
     inner.add_row(Panel(data, title="Resultado", box=box.ROUNDED, padding=(1,2)))
+    
 
     panel = Panel.fit(
         inner,
         title="Scraper Profesional",
-        subtitle="Salida limpia y lista para informes",
         box=box.DOUBLE,
     )
 
