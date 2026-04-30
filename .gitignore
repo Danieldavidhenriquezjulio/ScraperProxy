@@ -1,0 +1,93 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+venv.bak/
+env.bak/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# mypy
+.mypy_cache/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Optional Tor/data artifacts (if you run Tor locally and store data here)
+tor.log
+tor_data/
+
+# evitar zips/binaries
+*.zip
+*.tar.gz
+*.7z
+
+# Tor / runtime data
+repo.git/
+tor/
+tor_data/
+tor.log
+Data/
+data/
+docs/
+
+# builds de docs (si usas Sphinx)
+docs/_build/
+docs/build/
